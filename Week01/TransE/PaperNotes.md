@@ -9,8 +9,6 @@
 - Use patterns in this mutli-relational to generalize to other uses
     - Between one entity-to-ALL of the others
 - Can model more complex relations between data, that is not simple one-to-one
-
-
 - "Following the success of user/item clustering or matrix factorization techniques in collaborative
 filtering to represent non-trivial similarities between the connectivity patterns of entities in single-
 relational data," -> What the hell

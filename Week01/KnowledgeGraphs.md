@@ -25,3 +25,10 @@ Edge: Any type of relation
 - Therefore BushHouse is located in London
 
 - Based on an ontology (define this)
+
+
+
+---------------------------------------------------------------------
+
+
+- Knowledge graph embedding is the task of completing the knowledge graphs by probabilistically inferring the missing arcs from the existing graph structure
