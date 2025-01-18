@@ -16,7 +16,28 @@
     - TODO FIND OUT WHAT TYPES of relation this can stores
         - then what it does well/not so well
 
-    - lookup table somwhere for h,t -> r ?
+    - "where the tail entities (t 1 , t2 , ..., t m )
+        are all pushed into a cramped range because mini-
+        mizing loss function impels every training triplet to
+        satisfy ||h + r  t|| = 0, leading to h 1 = h 2 =
+        ... = h m in the worst case" - from TransM paper, but it makes sense why it's bad at handling "many" relations
+
+- Would like to talk about Unstructed at some point
+
+- TransM
+    - Just an extension of TransE
+    - Introduces a weight for each triple
+    - adjust importance based on confidence/relevance
+    - this makes it bad for noisey dataset
+    - "pre-calculating the distinct weight for each training triplet"
+    - authors keep dissing TransE authors for its inability to handle "many" relations
+        - "In reality, however, there are roughly only 26.2% ONE-TO-ONE triplets that are suitable to be modeled by TransE."
+    - comparable parameter complexity to TransE
+    - weights are measured using (tails per head) and (heads per tail)
+    - "many" relations will have a much higher number of tph and hpt
+        - for instance, parentOf might have a low number of tails per head, and a high heads per tails
+        - low parents, high children
+    - normalized to a unit sphere around where the relation points to
 - TransH
     - Hyperplane?
     - project h,r,t into a hyperplane specific to that relation.
@@ -45,3 +66,8 @@
         - k =  num relations
     - those semantic spaces no longer need to be of the same dimension
     - projection matrix for each relation??
+    - can model 1 to many relations better
+        - say h is related to both t1 and t2,
+        - map h to h` in relation space
+        - then map t1 and t2 to the same place in relation space
+        - while all three remain separate entities in entity space

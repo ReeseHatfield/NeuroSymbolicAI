@@ -8,6 +8,7 @@
 
 - A worksAt.organization
     - there is a works at relation which points to an organizations 
-- WHen preparing
+- When preparing
     - Think about what I did not get from the paper
     - Note down questions, note down answers if possible, if hard ask cogan
+    - 
