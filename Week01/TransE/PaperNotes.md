@@ -58,7 +58,6 @@ relational data," -> What the hell
 ### Neural Tensor Models
 - another approach is a neural tensor model
 - learning score s(h,l,t) = h^T * Lt + l1^T * h + l^T * t
-- 
 
 ## Experiments:
 - TransE evaluted on data from FreeBase and WordNet
